@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="tienda/Tienda.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="tienda/Tienda.js"></script>
+</head>
+<body>
+    <!--Barra de navegacion-->
+    <nav >
+        <ul  class="barra_naveganacion" id="barra_naveganacion">
+            <li ><a href="menu.html">Inicio</a></li>
+            <li><a href="Misiones.html">Misiones</a></li>
+            <li><a href="Carro.html">Carro</a></li>
+            <li><a href="Tienda.html">Tienda</a></li>
+            <li><a href="Informacion.html">Informacion</a></li>
+            <li><a href="Sobre_mi.html">Sobre mi</a></li>
+            
+        </ul>
+        
+    </nav>
+
+    <div class="encabezado">
+        <h1>TIENDA</h1>
+        <h3>Puntos: </h3>
+        <div id="puntos" class="puntos">
+        
+        </div>
+    </div>
+
+    <div class="objetos">
+        <div class="paquete"> 
+            <h4>Piloto Celeste</h4>
+            <img src="scripts/carro-celeste.png" alt="carro-completo-celeste" class="carro-completo">
+            <div class="pack-separado">
+                <img src="scripts/Personaje-celeste.png" alt="Personaje-celeste" class="personaje">
+                <img src="scripts/carro-celeste-sinp.png" alt="carro-celeste" class="carro">
+            </div>
+            <button class="comprar" id="Celeste" onclick="comprar_celeste()">$200</button>
+        </div>
+        <div class="paquete"> 
+            <h4>Piloto Blanco</h4>
+            <img src="scripts/carro-blanco.png" alt="carro-completo-blanco" class="carro-completo">
+            <div class="pack-separado">
+                <img src="scripts/personaje-blanco.png" alt="personaje-blanco" class="personaje">
+                <img src="scripts/carro-blanco-sinp.png" alt="carro-blanco" class="carro">
+            </div>
+            <button class="comprar" id= "Blanco" onclick="comprar_blanco()">$500</button>
+
+        </div>
+        <div class="paquete"> 
+            <h4>Piloto Negro</h4>
+            <img src="scripts/carro-negro.png" alt="carro-completo-negro" class="carro-completo">
+            <div class="pack-separado">
+                <img src="scripts/personaje-negro.png" alt="personaje-negro" class="personaje">
+                <img src="scripts/carro-negro-sinp.png" alt="carro-negro" class="carro">
+            </div>
+            <button class="comprar" id= "Negro" onclick="comprar_negro()">$300</button>
+        </div>
+    </div>
+
+
+    
+</body>
+</html>

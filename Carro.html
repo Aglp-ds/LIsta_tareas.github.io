@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carro</title>
+    <link rel="stylesheet" href="carro/Carro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="carro/Carro.js"></script>   
+</head>
+<body>   
+    <!--Barra de navegacion-->
+    <nav >
+        <ul  class="barra_naveganacion" id="barra_naveganacion">
+            <li ><a href="menu.html">Inicio</a></li>
+            <li><a href="Misiones.html">Misiones</a></li>
+            <li><a href="Carro.html">Carro</a></li>
+            <li><a href="Tienda.html">Tienda</a></li>
+            <li><a href="Informacion.html">Informacion</a></li>
+            <li><a href="Sobre_mi.html">Sobre mi</a></li>
+        </ul>
+        
+    </nav>  
+
+    <div class="objetos">
+        <div class="paquete" id="paquete-celeste"> 
+            <h4>Piloto Celeste</h4>
+            <img src="scripts/carro-celeste.png" alt="carro-completo-celeste" class="carro-completo">
+            <div class="pack-separado">
+                <img src="scripts/Personaje-celeste.png" alt="Personaje-celeste" class="personaje">
+                <img src="scripts/carro-celeste-sinp.png" alt="carro-celeste" class="carro">
+            </div>
+            <button class="equipar" id="Celeste" onclick="utilizar_celeste()">Utilizar</button>
+        </div>
+        <div class="paquete" id="paquete-blanco"> 
+            <h4>Piloto Blanco</h4>
+            <img src="scripts/carro-blanco.png" alt="carro-completo-blanco" class="carro-completo">
+            <div class="pack-separado">
+                <img src="scripts/personaje-blanco.png" alt="personaje-blanco" class="personaje">
+                <img src="scripts/carro-blanco-sinp.png" alt="carro-blanco" class="carro">
+            </div>
+            <button class="equipar" id= "Blanco" onclick="Utilizar_blanco()">Utilizar</button>
+
+        </div>
+        <div class="paquete" id="paquete-negro"> 
+            <h4>Piloto Negro</h4>
+            <img src="scripts/carro-negro.png" alt="carro-completo-negro" class="carro-completo">
+            <div class="pack-separado">
+                <img src="scripts/personaje-negro.png" alt="personaje-negro" class="personaje">
+                <img src="scripts/carro-negro-sinp.png" alt="carro-negro" class="carro">
+            </div>
+            <button class="equipar" id= "Negro" onclick="utilizar_negro()">Utilizar</button>
+        </div>
+        
+    </div>
+        <div class="paquete1"> 
+            <h4>Piloto Rojo</h4>
+            <img src="scripts/carro-rojo-sinp.png" alt="carro-completo-rojo" class="carro-completo">
+            <div class="pack-separado">
+                <img src="scripts/personaje_inicio.png" alt="personaje-rojo" class="personaje">
+                <img src="scripts/carro rojo.png" alt="carro-rojo" class="carro">
+            </div>
+            <button class="equipar" id= "Rojo" onclick="utilizar_rojo()">Utilizar</button>
+        </div>
+</body>
+</html>

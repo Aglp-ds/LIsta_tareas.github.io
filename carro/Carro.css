@@ -1,0 +1,117 @@
+/*Estilo general de misiones*/
+body,html{
+    background-color: #1E1E1E;
+    font-family: 'Press Start 2P' , cursive;
+    padding:0;
+    margin:0 ;
+    
+
+}
+/*Estilo de la barra de navegacion*/
+nav{
+    margin: 0px;
+}
+.barra_naveganacion{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 5px;
+    padding: 8px;
+    gap: 80px;
+    background-color: #333333;
+    border: 2px solid #000000;
+    
+}
+
+.barra_naveganacion li{
+    margin: 8px;
+    margin-left: 10;
+    
+}
+
+.barra_naveganacion li:hover{
+    opacity: 0.2;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    
+}
+
+
+.objetos{
+    display: flex;
+    justify-content: space-between;
+    
+    margin: 7px;
+
+}
+
+.paquete{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    border: 2px solid #000000;
+    background-color: #333333;
+    padding: 5px;
+}
+
+.carro-completo{
+    width: 370px;
+    border-top: 2px solid #000000;
+
+}
+
+
+
+.pack-separado{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.personaje{
+    width: 150px;
+}
+
+.carro{
+    height: 200px;
+    width: 250px;
+}
+
+
+.equipar{
+    background-color: #FF7B00;
+    width: 100%;
+    height: auto;
+    border: 3px solid #000000;
+    font-family: 'Press Start 2P' , cursive;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    
+}
+
+
+.equipar:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+    
+}
+
+.paquete1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    border: 2px solid #000000;
+    background-color: #333333;
+    padding: 5px;
+    width: 401px;
+    margin-left: 470px;
+}

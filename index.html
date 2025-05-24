@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+<!--Esporto una tipografia de Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+    
+
+
+</head>
+<body>
+    <!--Pantalla de carga-->
+    <div  class="pantalla-Carga" id="pantalla-Carga">
+        <img class="gif" src="gif-carro.gif" alt="Cargando">
+        <p class="textocarga">Cargando espere...</p> 
+    </div>
+
+    <!--Formulario de registro-->
+
+    <form class="inicio" id="Registro">
+        <h3>Registrese </h3>
+        <input type="text" class="datos" id="Nombre-u" placeholder="Nombre" autocomplete="off" required >
+        <input type="password" class="datos" id="Contraseña-u" placeholder="Contraseña" required>
+        <button onclick="primer_inicio()"  class="botonR" id="boton_r" >Aceptar</button>
+
+    </form>
+
+    <form class="inicio" id="inicio">
+        <h3>Inicio de seccion</h3>
+        <input type="text" class="datos" id="Nombre-ui" placeholder="Nombre" autocomplete="off" required >
+        <input type="password" class="datos" id="Contraseña-ui" placeholder="Contraseña" required>
+        <button onclick="Coprobacion_registro(event)" class="botonR" id="boton_i" > Aceptar </button>
+
+    </form>
+
+
+
+
+
+    <!--Conecto el js con HTML-->
+    <script src="proyecto.js"> </script>
+</body>
+</html>

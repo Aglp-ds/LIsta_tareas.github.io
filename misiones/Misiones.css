@@ -1,0 +1,415 @@
+/*Estilo general de misiones*/
+body,html{
+    background-color: #1E1E1E;
+    font-family: 'Press Start 2P' , cursive;
+    padding:0;
+    margin:0 ;
+    
+
+}
+/*Estilo de la barra de navegacion*/
+nav{
+    margin: 0px;
+}
+.barra_naveganacion{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 5px;
+    padding: 8px;
+    gap: 80px;
+    background-color: #333333;
+    border: 2px solid #000000;
+    
+}
+
+.barra_naveganacion li{
+    margin: 8px;
+    margin-left: 10;
+    
+}
+
+.barra_naveganacion li:hover{
+    opacity: 0.2;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    
+}
+
+/*Barra para navegar entre categorias,puntos y agregar tareas*/
+.encabez{
+    display: flex;
+    justify-content:space-around ;
+    margin: 6px;
+    padding: 5px;
+    gap: 20px;
+    
+
+    
+}
+
+/*Boton para agragar tareas*/
+.encabez button{
+    font-size: 30px;
+    border-radius: 20px;
+    width: 50px;
+    height: 50px;
+    margin-top: 8px;
+    
+    
+}
+
+/*Barra de navegacion de categorias*/
+.encabez .barra_categoria{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+
+}
+
+.barra_categoria li{
+    margin: 8px;
+    margin-left: 10;
+    
+}
+
+.barra_categoria li:hover{
+    opacity: 0.4;
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
+/*Formulario para agregar tareas*/
+.agregar_tarea{
+    display: none;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 40px;
+    border: 4px solid black;
+    background-color: #333333;
+    margin-left: 28%;
+    margin-top: 10px;
+    width: 600px;
+    height: auto;
+    border-radius: 20px;
+    color: white;
+
+    
+}
+
+.agregar_tarea h2{
+    margin: 0;
+    
+}
+
+.agregar_tarea form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/*Estilo para seleccionar categoria*/
+form .categoria{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    border: 2px solid #FF7B00;
+    border-radius: 5px;
+    background-color: #333333;
+    font-family: 'Press Start 2P' , cursive;
+    font-size: 13px;
+    color: white;
+    
+}
+
+
+form .label1{
+    position: absolute;
+    margin-top: -12px;
+    margin-left: 10px;
+    background-color:  #333333;
+    color: #FF7B00;
+    padding: 5px;
+    
+}
+/*Estilo para escribir la tarea*/
+form  .tarea {
+    width: 98%;
+    border-radius: 5px;
+    height: 30px;
+    padding: 4px;
+    font-family: 'Press Start 2P' , cursive;
+    background-color: transparent;
+    color: white;
+    border: 2px solid #FF7B00;
+    text-align: center;
+    
+}
+
+form .label2{
+    position: absolute;
+    margin-top: 58px;
+    margin-left: 10px;
+    background-color:  #333333;
+    color: #FF7B00;
+    padding: 5px;
+    
+    
+    
+}
+
+/* Contenedor de botones para guardar y cancelar tarea*/
+form .botones{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+
+/* botones para guardar y cancelar tarea*/
+.botones button{
+    text-align: center;
+    border-radius: 5px;
+    width: 140px;
+    padding: 10px;
+    font-family: 'Press Start 2P' , cursive;
+
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
+/*Contenedor de tareas*/
+.Vista_tareas{
+    display: flex;
+    flex-direction: column;
+    
+    margin: 30px;
+    padding: 10px;
+    gap: 30px;
+}
+
+
+.Vista_tareas .Mentales{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #FFDE59;
+    margin-top: 10px;
+    padding: 10px;
+    
+
+}
+
+.Mentales  h2{
+    margin-left: 20px;
+    position: absolute;
+    margin-top: -30px;
+    background-color:  #1E1E1E;
+    padding: 10px;
+    color: #FFDE59;
+}
+
+
+
+.Mentales .tareas-m{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    list-style: none;
+    gap: 10px;
+    
+}
+
+.tareas-m li{
+    display: flex;
+    background-color:  #333333;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 2px solid #ffff;  
+}
+
+li p{
+    width: 99%;
+}
+
+li .b_terminado{
+    background-color: #FF7B00;
+    width: 40px;
+    border: none;
+    border-left: 2px solid #ffff ;
+    border-bottom-right-radius:  10px;
+    border-top-right-radius:  10px;
+    font-size: 19px;
+    
+
+    
+}
+li .b_eliminar{
+    background-color: #FF5E5E ;
+    width: 40px;
+    border: none;
+    border-left: 2px solid #ffff ;
+    font-size: 19px;
+    
+}
+
+.Vista_tareas .Físicas{
+    
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #FFDE59;
+    margin-top: 10px;
+    padding: 10px;
+    
+
+}
+.Físicas  h2{
+    margin-left: 20px;
+    position: absolute;
+    margin-top: -30px;
+    background-color:  #1E1E1E;
+    padding: 10px;
+    color: #FFDE59;
+}
+
+.Físicas .tareas-f{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    list-style: none;
+    gap: 10px;
+
+}
+
+.tareas-f li{
+    display: flex;
+    background-color:  #333333;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 2px solid #ffff;  
+}
+
+.Vista_tareas .Académicas
+{
+    
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #FFDE59;
+    margin-top: 10px;
+    padding: 10px;
+    
+
+}
+
+.Académicas  h2{
+    margin-left: 20px;
+    position: absolute;
+    margin-top: -30px;
+    background-color:  #1E1E1E;
+    padding: 10px;
+    color: #FFDE59;
+}
+.Académicas .tareas-a{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    list-style: none;
+    gap: 10px;
+
+}
+
+.tareas-a li{
+    display: flex;
+    background-color:  #333333;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 2px solid #ffff;  
+}
+
+.Vista_tareas .Personales{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #FFDE59;
+    margin-top: 10px;
+    padding: 10px;
+    
+
+}
+
+.Personales  h2{
+    margin-left: 20px;
+    position: absolute;
+    margin-top: -30px;
+    background-color:  #1E1E1E;
+    padding: 10px;
+    color: #FFDE59;
+}
+.Personales .tareas-p{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    list-style: none;
+    gap: 10px;
+
+}
+
+.tareas-p li{
+    display: flex;
+    background-color:  #333333;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 2px solid #ffff;  
+}
+
+.Vista_tareas .Creativas{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #FFDE59;
+    margin-top: 10px;
+    padding: 10px;
+    
+
+}
+
+.Creativas  h2{
+    margin-left: 20px;
+    position: absolute;
+    margin-top: -30px;
+    background-color:  #1E1E1E;
+    padding: 10px;
+    color: #FFDE59;
+}
+.Creativas .tareas-c{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    list-style: none;
+    gap: 10px;
+
+}
+
+.tareas-c li{
+    display: flex;
+    background-color:  #333333;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 2px solid #ffff;  
+}
+.indicador_puntos{
+    color: white;
+}
+
+.indicador_puntos h3{
+    color: #FF7B00;
+}

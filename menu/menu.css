@@ -1,0 +1,137 @@
+body,html{
+    background-color: #1E1E1E;
+    font-family: 'Press Start 2P' , cursive;
+    padding:0;
+    margin:0 ;
+
+}
+
+nav{
+    margin: 0px;
+}
+.barra_naveganacion{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 5px;
+    padding: 8px;
+    gap: 80px;
+    background-color: #333333;
+
+    border: 2px solid #000000;
+    
+}
+
+
+
+li{
+    margin: 8px;
+    margin-left: 10;
+    
+}
+
+li:hover{
+    opacity: 0.2;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+
+}
+
+
+
+.Personajes {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    
+    
+    gap: 20px;
+    
+}
+
+
+
+.Personajes .personaje{
+    height: 400px;
+}
+
+.Personajes .carro{
+    height: 400px;
+    margin-right: 67px;
+}
+
+.Personajes .bandera{
+    height: 300px;
+    margin-top: 50px;
+}
+
+
+
+
+
+.contenodor-datos{
+    display: flex;
+    margin-left: 65px;
+    
+    padding: 5px;
+    gap: 29px;
+    
+}
+
+.contenodor-datos .dats{
+    background-color: #333333;
+    width: auto;
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+
+    
+    
+    
+}
+
+.contenodor-datos .dats1{
+    background-color: #333333;
+    width: 170px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+
+    
+    
+    
+}
+
+.dats h5{
+    color: white;
+    margin: 0;
+    
+}
+
+.dats h4{
+    color: #FF7B00;
+    margin-top: 4;
+    text-align: center;
+    
+    
+}
+
+.dats1 h5{
+    color: white;
+    margin: 0;
+    
+}
+
+.dats1 h4{
+    color: #FF7B00;
+    margin-top: 4;
+    text-align: center;
+    
+    
+}

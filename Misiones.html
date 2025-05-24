@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misiones</title>
+    <link rel="stylesheet" href="misiones/Misiones.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="misiones/Misiones.js"></script>
+</head>
+<body>
+    <!--Barra de navegacion-->
+    <nav >
+        <ul  class="barra_naveganacion" id="barra_naveganacion">
+            <li ><a href="menu.html">Inicio</a></li>
+            <li><a href="Misiones.html">Misiones</a></li>
+            <li><a href="Carro.html">Carro</a></li>
+            <li><a href="Tienda.html">Tienda</a></li>
+            <li><a href="Informacion.html">Informacion</a></li>
+            <li><a href="Sobre_mi.html">Sobre mi</a></li>
+        </ul>
+        
+    </nav>
+
+    <!--Boton para agregar una nueva tarea-->
+    <div class="encabez" id="encabezado">
+        <button onclick="abrirventana()" id="boton_tareas">+</button>
+
+        <ul class="barra_categoria" id="barra_categoria">
+            <li><a href="#Mentales">Mentales</a></li>
+            <li><a href="#Físicas">Físicas</a></li>
+            <li><a href="#Académicas">Académicas</a></li>
+            <li><a href="#Personales">Personales</a></li>
+            <li><a href="#Creativas">Creativas</a></li>
+        </ul>  
+            <div id="puntos" class="indicador_puntos"></div>   
+    </div>
+
+    <!--Ventana para agrgar tarea junto con su categoria-->
+    <div class="agregar_tarea" id="ventana_tareas">
+        <h2>Agragar Mision</h2>
+        <form >
+            <!--Categorias para las tareas-->
+            <label for="categoria" class="label1">Categoria</label>
+            <select name="categoria" id="categoria" class="categoria" required>
+                <option >Mentales</option>
+                <option >Físicas</option>
+                <option >Académicas </option>
+                <option >Personales  </option>
+                <option >Creativas </option>
+            </select>
+            <!--Ventana para agrgar tarea junto con su categoria-->
+            <label for="tarea-u" class="label2">Mision</label>
+            <input type="text" name="tarea" id="tarea-u" class="tarea" placeholder="Ingrese su Mision" autocomplete="off">
+
+            <div class="botones">
+                <button onclick="guardar_tarea(event)" id="boton_guardar" >Guardar</button>
+                <button onclick="cancelar_tarea(event)" id="boton_cancelar">Cancelar</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="Vista_tareas">
+        
+        <div class="Mentales" id="Mentales">
+            <h2>Mentales</h2>
+            <ul id="tareas-m" class="tareas-m"></ul>
+        </div>
+
+        
+        <div class="Físicas" id="Físicas">
+            <h2>Fisicas</h2>
+            <ul id="tareas-f" class="tareas-f"></ul>
+        </div>
+
+        <div class="Académicas" id="Académicas">
+            <h2>Académicas</h2>
+            <ul id="tareas-a" class="tareas-a"></ul>
+        </div>
+
+        <div class="Personales" id="Personales">
+            <h2>Personales</h2>
+            <ul id="tareas-p" class="tareas-p"></ul>
+        </div>
+
+        <div class="Creativas" id="Creativas">
+            <h2>Creativas</h2>
+            <ul id="tareas-c" class="tareas-c"></ul>
+        </div>
+        
+    </div>
+</body>
+</html>
